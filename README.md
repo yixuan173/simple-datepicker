@@ -2,7 +2,7 @@
 
 ### [Demo](https://yixuan173.github.io/simple-datepicker/)
 
-一個不透過第三方套件的日期選擇器
+一個不透過第三方套件的日期選擇器.
 
 ## How to use
 
