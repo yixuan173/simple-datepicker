@@ -1,39 +1,68 @@
-.App {
-  text-align: center;
-  color: red;
+.layout {
+  margin: 0 auto;
+  width: 350px;
+  height: 240px;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.select-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: white;
+}
+.select-button:hover {
+  background-color: #e6e6e6;
+}
+
+
+.date-body {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+}
+
+.date-button {
+  display: flex;
+  width: 50px;
+  height: 36px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: white;
+}
+
+.date-button.today {
+  background-color: #ffff76;
+}
+
+.date-button.non {
+  color: #757575;
+}
+
+.date-button.active,
+.date-button.active:hover {
+  background-color: #006edc;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.date-button.disable {
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.date-button.disable:hover {
+  background-color: white;
+}
+
+.date-button:hover,
+.date-button.today:hover  {
+  background-color: #e6e6e6;
 }
