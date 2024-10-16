@@ -4,12 +4,16 @@
 
 ## How to use
 
-In the project directory, you can run:
+可直接打開 /public/index.html 做查看.
+
+### 指令
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+透過 webpack 在 development mode 下 watch code change.\
+打開 /public/index.html 可看當前最新的結果.\
+如果有任何異動要重新刷新 index.html 才可吃到最新的 bundle 檔.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `npm run buile`
+
+透過 webpack 在 production mode 下進行打包.
